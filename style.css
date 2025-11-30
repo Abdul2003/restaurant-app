@@ -1,0 +1,13 @@
+.nav-link.dropdown-toggle{
+    color: black;
+}
+.nav-link.dropdown-toggle:hover{
+    color: grey;
+}
+
+.nav-link.cart{
+    color: black;
+}
+.nav-link.cart:hover{
+    color: grey;
+}

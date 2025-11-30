@@ -124,7 +124,7 @@ async function getData() {
     const column = document.createElement("div");
     column.classList.add("col", "d-flex", "justify-content-center");
     const card = document.createElement("div");
-    card.classList.add("my-3", "card");
+    card.classList.add("my-3", "card", "border-0");
     card.style.width = "18rem";
     card.style.Height = "30rem";
     const cardImg = document.createElement("img");
@@ -133,7 +133,7 @@ async function getData() {
     cardImg.onerror = () => column.classList.add("d-none");
     cardImg.classList.add("card-img-top");
     const cardBody = document.createElement("div");
-    cardBody.classList.add("card-body", "mt-3", "bg-secondary", "rounded-top");
+    cardBody.classList.add("card-body", "mt-3", "bg-dark", "rounded-top", "rounded-bottom");
 
     const cardTitle = document.createElement("h5");
     cardTitle.classList.add("card-title", "text-light");
