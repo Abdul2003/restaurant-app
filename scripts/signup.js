@@ -37,5 +37,27 @@ signUpForm.addEventListener("submit", (e) => {
     });
   }
   //Call firebase built-in function to create a user in the application
-  
+  createUserWithEmailAndPassword(auth, email, password)
+    .then(() => {
+      //Display success message upon successful login
+      Swal.fire({
+        position: "top",
+        icon: "success",
+        title: "Account Created Successful",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+      setTimeout(function () {
+        window.location = "/login.html";
+      }, 1500);
+      signUpForm.reset();
+    })
+    .catch((error) => {
+      //Display error message if login is not possible
+      Swal.fire({
+        title: "Error",
+        text: error.message,
+        icon: "error",
+      });
+    });
 });
