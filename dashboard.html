@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Restaurant App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style/style.css" />
+    <script type="module" src="/scripts/dashboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Restaurant-Hub</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html">Cart</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Food Types
+              </a>
+              <ul class="dropdown-menu p-3" aria-labelledby="navbarDropdown">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="bbqs"
+                    value="bbqs"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    BBQs
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="best-foods"
+                    value="best-foods"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Best-Foods
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="breads"
+                    value="breads"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Breads
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="burgers"
+                    value="burgers"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Burgers
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="chocolates"
+                    value="chocolates"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Chocolates
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="desserts"
+                    value="desserts"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Desserts
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="drinks"
+                    value="drinks"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Drinks
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="fried-chicken"
+                    value="fried-chicken"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Fried-Chicken
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="ice-cream"
+                    value="ice-cream"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Ice-Cream
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="pizzas"
+                    value="pizzas"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Pizzas
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="porks"
+                    value="porks"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Porks
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="sandwiches"
+                    value="sandwiches"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Sandwiches
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="sausages"
+                    value="sausages"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Sausages
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="steaks"
+                    value="steaks"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Steaks
+                  </label>
+                </div>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            <i class="bi bi-person"></i>
+          </button>
+          <i class="bi bi-person"></i> -->
+
+        <div class="dropdown">
+          <button
+            class="btn btn-outline-success my-2 my-sm-0 dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="bi bi-person"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li class="d-flex justify-content-center">
+              <button id="logOut" class="btn btn-danger">Log Out</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="container" class="container py-5">
+      <div
+        id="row-container"
+        class="row gy-5 row-cols-2 row-cols-lg-4 row-cols-md-3"
+      ></div>
+    </div>
+    <nav class="navbar bottom bg-dark">
+      <div class="container-fluid d-flex justify-content-center">
+        <a class="navbar-brand text-light" href="#">Restaurant Hub</a>
+      </div>
+    </nav>
+  </body>
+</html>
