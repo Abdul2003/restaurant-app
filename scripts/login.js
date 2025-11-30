@@ -29,27 +29,5 @@ loginForm.addEventListener("submit", (e) => {
   const password = loginForm["password"].value;
 
   //Call firebase built-in function to login a user to the application
-  signInWithEmailAndPassword(auth, email, password)
-    .then(() => {
-      //Display success message upon successful login
-      Swal.fire({
-        position: "top",
-        icon: "success",
-        title: "Login Successful",
-        showConfirmButton: false,
-        timer: 1500,
-      });
-      setTimeout(function () {
-        window.location = "dashboard.html?q=bbqs";
-      }, 1500);
-      loginForm.reset();
-    })
-    .catch((error) => {
-      //Display error message if login is not possible
-      Swal.fire({
-        title: "Error",
-        text: error.message,
-        icon: "error",
-      });
-    });
+  
 });
